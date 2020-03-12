@@ -36,11 +36,9 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }
-
 test {
     useJUnitPlatform()
 }
-
 bootRun.environment([
         "WELCOME_MESSAGE": "hello",
 ])
@@ -49,7 +47,6 @@ test.environment([
         "WELCOME_MESSAGE": "Hello from test",
 ])
 
-bootJar{
+bootJar {
     archiveName="pal-tracker.jar"
 }
-
